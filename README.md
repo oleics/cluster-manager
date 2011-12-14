@@ -7,10 +7,18 @@ Usage
 ```js
 var cm = require('cluster-manager');
 var options = {
-  port:     80,        // port to listen to
+  port:     8080,      // port to listen to
   hostname: '0.0.0.0', // hostname to bind to
   user:     'node',    // the user to set a worker-process to
   app_path: null       // path to app a worker serves
 };
 cm.run(options);
 ```
+
+Features
+
+ * Forks one worker per CPU by default (can be raised or lowered)
+ * Reload of workers with a zero-down-time option
+ * Commandline tool available
+
+More features will be added by request.
