@@ -1,0 +1,20 @@
+{
+    "name": "cluster-manager",
+    "version": "0.0.0",
+    "description": "Manager for buildin cluster-module.",
+    "keywords": ["Cluster", "Restart", "Zero Down Time", "Error Reporting"],
+    "author": "Oliver Leics <oliver.leics@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://oleics@github.com/oleics/cluster-manager.git"
+    },
+    "main": "./lib/index.js",
+    "bin": {
+        "cluster": "./bin/cluster"
+    },
+    "directories": {
+        "lib": "./lib"
+    },
+    "engine": "node >= 0.6.0",
+    "dependencies": {}
+}

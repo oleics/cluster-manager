@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+// defaults
+options = {
+};
+
+// get args from commandline
+if(process.argv[2]) {
+    options.port = process.argv[2];
+}
+if(process.argv[3]) {
+    options.hostname = process.argv[3];
+}
+if(process.argv[4]) {
+    options.user = process.argv[4];
+}
+if(process.argv[5]) {
+    options.app_path = process.argv[5];
+}
+
+// 
+var path = require('path'),
+    fs   = require('fs');
+
+var dir_lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+
+require(dir_lib + '/index').run(options);
