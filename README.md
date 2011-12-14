@@ -1,12 +1,12 @@
-cluster-manager
+# cluster-manager
 
 A module for Node.js that manages a cluster.
 
-Install
+## Install
 
 `npm install cluster-manager`
 
-Usage
+## Usage
 
 ```js
 var cm = require('cluster-manager');
@@ -15,23 +15,23 @@ var options = {
 };
 var master = cm.run(options);
 if(master) {
-    // we're in the master-process
+  // we're in the master-process
 }
 ```
 
 See `./app/index.js` for a minimum app-file.
 
-Master Interface
+## Master Interface
 
-`.getPIDs()`  
-`.fork([cb])`  
+array `.getPIDs()`  
+worker `.fork([cb])`  
 `.stop(pid)`  
 `.restart(pid)`  
 `.restartAll()`  
-`.restartZDT(pid)` 
+`.restartZDT(pid)`  
 `.restartAllZDT()`  
 
-Features
+## Features
 
  * Forks one worker per CPU by default (can be raised or lowered)
  * Reload of workers with a zero-down-time option
