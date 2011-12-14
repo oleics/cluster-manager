@@ -2,14 +2,21 @@ cluster-manager
 
 A module for Node.js that manages a cluster.
 
+Install
+
+`npm install cluster-manager`
+
 Usage
 
 ```js
 var cm = require('cluster-manager');
 var options = {
-  app: null // path to app a worker serves
+  app: './app' // path to app a worker serves
 };
-cm.run(options);
+var master = cm.run(options);
+if(master) {
+    // we're in the master-process
+}
 ```
 
 See `./app/index.js` for a minimum app-file.
