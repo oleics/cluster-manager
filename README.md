@@ -23,13 +23,13 @@ See `./app/index.js` for a minimum app-file.
 
 Master Interface
 
-`.getPIDs()`
-`.fork([cb])`
-`.stop(pid)`
-`.restart(pid)`
-`.restartAll()`
-`.restartZDT(pid)`
-`.restartAllZDT()`
+`.getPIDs()`  
+`.fork([cb])`  
+`.stop(pid)`  
+`.restart(pid)`  
+`.restartAll()`  
+`.restartZDT(pid)` 
+`.restartAllZDT()`  
 
 Features
 
