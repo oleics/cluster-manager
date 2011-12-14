@@ -14,6 +14,16 @@ cm.run(options);
 
 See `./app/index.js` for a minimum app-file.
 
+Master Interface
+
+`.getPIDs()`
+`.fork([cb])`
+`.stop(pid)`
+`.restart(pid)`
+`.restartAll()`
+`.restartZDT(pid)`
+`.restartAllZDT()`
+
 Features
 
  * Forks one worker per CPU by default (can be raised or lowered)
