@@ -7,13 +7,12 @@ Usage
 ```js
 var cm = require('cluster-manager');
 var options = {
-  port:     8080,      // port to listen to
-  hostname: '0.0.0.0', // hostname to bind to
-  user:     'node',    // the user to set a worker-process to
-  app_path: null       // path to app a worker serves
+  app: null // path to app a worker serves
 };
 cm.run(options);
 ```
+
+See `./app/index.js` for a minimum app-file.
 
 Features
 

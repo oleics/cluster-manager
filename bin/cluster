@@ -1,24 +1,9 @@
 #!/usr/bin/env node
 
-// defaults
-options = {
-};
+var options = require('nopt')(
+    {app: [String, null], num: [Number, null]}
+);
 
-// get args from commandline
-if(process.argv[2]) {
-    options.port = process.argv[2];
-}
-if(process.argv[3]) {
-    options.hostname = process.argv[3];
-}
-if(process.argv[4]) {
-    options.user = process.argv[4];
-}
-if(process.argv[5]) {
-    options.app_path = process.argv[5];
-}
-
-// 
 var path = require('path'),
     fs   = require('fs');
 

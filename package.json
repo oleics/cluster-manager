@@ -1,6 +1,6 @@
 {
     "name": "cluster-manager",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Manager for buildin cluster-module.",
     "keywords": ["Cluster", "Restart", "Zero Down Time", "Error Reporting"],
     "homepage": "https://github.com/oleics/cluster-manager",
@@ -17,5 +17,7 @@
         "lib": "./lib"
     },
     "engine": "node >= 0.6.0",
-    "dependencies": {}
+    "dependencies": {
+        "nopt": ">= 1.0.10"
+    }
 }
